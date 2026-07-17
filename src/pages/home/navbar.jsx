@@ -33,7 +33,7 @@ export default function Navbar() {
         >
           My profile
         </a>
-        <button className="bg-green text-white rounded-sm w-[126px] h-[48px]">
+        <button className="bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
           Basket (3)
         </button>
       </nav>

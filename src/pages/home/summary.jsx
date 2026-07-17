@@ -3,7 +3,7 @@ import ArrowIcon from "./arrowicon";
 
 export default function Summary() {
   return (
-    <div className="max-w-[395px] max-h-[318px] border-2 border-divider rounded-3xl px-6 py-6 bg-back w-full">
+    <div className="max-w-[395px] max-h-[318px] border-2 border-divider rounded-3xl px-6 py-6 bg-back w-full  hover:scale-[1.02] transform transition-all duration-300 ease-in-out">
       <div className="flex flex-col gap-4">
         <div>
           <h1 className="text-xl text-black font-semibold font-inter tacking-[0%] leading-[130%]">
@@ -45,7 +45,7 @@ export default function Summary() {
           </h3>
         </div>
         <div>
-          <button className="w-full bg-green text-white text-lg font-semibold font-inter tacking-[0%] leading-[130%] w-full h-12 rounded-lg flex justify-between items-center px-4 mt-5 max-w-[347px]">
+          <button className="w-full bg-green text-white text-lg font-semibold font-inter tracking-[0%] leading-[130%] h-12 rounded-lg flex justify-between items-center px-4 mt-5 max-w-[347px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
             Continue to payment
             <ArrowIcon />
           </button>

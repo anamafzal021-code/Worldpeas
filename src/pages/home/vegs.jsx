@@ -3,8 +3,8 @@ import veg1 from "../../assets/veg1.png";
 import icon from "../../assets/icon.svg";
 export default function Vegs({ image, name, price, quantity, pricePerLB }) {
   return (
-    <div className="w-full grid grid-cols-[2.8fr_1fr] max-w-[821px] min-h-[159px] rounded-3xl border-2 border-divider bg-back  overflow-hidden">
-      <div className="flex flex-row shrink-0 ">
+    <div className="w-full grid grid-cols-[2.8fr_1fr] max-w-[821px] min-h-[159px] rounded-3xl border-2 border-divider bg-back overflow-hidden hover:scale-[1.02] transform transition-all duration-300 ease-in-out">
+      <div className="flex flex-row shrink-0">
         <img
           className="object-cover rounded-l-3xl  overflow-hidden w-[160px] h-full"
           src={image}
