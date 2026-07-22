@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="font-newsreader text-green tracking-[-0.01em] text-[32px] leading-[100%]">
         World Peas
       </div>
-      <nav className="hidden lg:flex lg:gap-13 md:gap-8 text-black font-base font-inter tracking-normal leading-[130%] whitespace-nowrap items-center">
+      <nav className="hidden lg:flex lg:gap-[52px] md:gap-8 text-black font-base font-inter tracking-normal leading-[130%] whitespace-nowrap items-center">
         <a
           href="#shop"
           className="hover:underline hover:text-green transition-all duration-100 text-center"
@@ -40,12 +40,12 @@ export default function Navbar() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden text-text-dark text-2xl focus:outline-none"
+        className="lg:hidden text-text-dark text-2xl focus:outline-none"
       >
         {isOpen ? "✕" : "☰"}
       </button>
       {isOpen && (
-        <nav className="bg-white md:hidden absolute top-full left-0 w-full flex flex-col items-center justify-center gap-6 py-8 text-text-nav font-medium font-comfortaa shadow-xl border-t border-gray-100 z-40 animate-fadeIn">
+        <nav className="bg-white lg:hidden absolute top-full left-0 w-full flex flex-col items-center justify-center gap-6 py-8 text-text-nav font-medium font-comfortaa shadow-xl border-t border-gray-100 z-40 animate-fadeIn">
           <a
             href="#shop"
             onClick={() => setIsOpen(false)}
@@ -56,7 +56,7 @@ export default function Navbar() {
           <a
             href="#newstand"
             onClick={() => setIsOpen(false)}
-            className="text-lg  transition-all duration-100 hover:underline active:text-green-950-400"
+            className="text-lg  transition-all duration-100 hover:underline active:text-green-900"
           >
             Newstand
           </a>

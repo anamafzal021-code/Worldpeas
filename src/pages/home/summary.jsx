@@ -12,35 +12,35 @@ export default function Summary() {
         </div>
 
         <div className="flex justify-between">
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black mt-2.5">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black mt-2.5">
             Subtotal
           </h3>
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black">
             $27.44
           </h3>
         </div>
 
         <div className="flex justify-between">
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black">
             Shipping
           </h3>
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black">
             $3.99
           </h3>
         </div>
         <div className="flex justify-between">
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black">
             Tax
           </h3>
-          <h3 className="text-lg font-normal font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-normal font-inter tracking-[0%] leading-[130%] text-black">
             $2.00
           </h3>
         </div>
         <div className="flex justify-between">
-          <h3 className="text-lg font-semibold font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-semibold font-inter tracking-[0%] leading-[130%] text-black">
             Total
           </h3>
-          <h3 className="text-lg font-semibold font-inter tacking-[0%] leading-[130%] text-black">
+          <h3 className="text-lg font-semibold font-inter tracking-[0%] leading-[130%] text-black">
             $33.43
           </h3>
         </div>

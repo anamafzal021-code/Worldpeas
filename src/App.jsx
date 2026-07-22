@@ -7,6 +7,7 @@ import veg2 from "./assets/veg2.png";
 import veg3 from "./assets/veg3.png";
 import Vegs from "./pages/home/vegs";
 import Summary from "./pages/home/summary";
+import HomePage from "./pages/home/homepage";
 
 export default function App() {
   const [quantity, setQuantity] = useState(1);
@@ -39,9 +40,9 @@ export default function App() {
   return (
     /* 🌍 Global Container:  */
     <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 min-h-screen flex flex-col">
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <main className="flex-1">
+      {/* <main className="flex-1">
         <Basket />
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 justify-center items-start mt-10">
           <div className="lg:col-span-2 flex flex-col gap-5 max-w-[821px] w-full ">
@@ -60,7 +61,8 @@ export default function App() {
             <Summary />
           </div>
         </div>
-      </main>
+      </main> */}
+      <HomePage />
     </div>
   );
 }
