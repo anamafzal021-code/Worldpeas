@@ -1,20 +1,22 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="flex justify-between items-center w-full z-50 bg-transparent mt-8 relative">
-      <div className="font-newsreader text-green tracking-[-0.01em] text-[32px] leading-[100%]">
+      <Link to="/" className="font-newsreader text-green tracking-[-0.01em] text-[32px] leading-[100%]">
         World Peas
-      </div>
+      </Link>
       <nav className="hidden lg:flex lg:gap-[52px] md:gap-8 text-black font-base font-inter tracking-normal leading-[130%] whitespace-nowrap items-center">
-        <a
-          href="#shop"
+
+        <Link
+          to="/"
           className="hover:underline hover:text-green transition-all duration-100 text-center"
         >
           Shop
-        </a>
+        </Link>
         <a
           href="#newstand"
           className="hover:underline hover:text-green transition-all duration-100"
@@ -33,9 +35,12 @@ export default function Navbar() {
         >
           My profile
         </a>
-        <button className="bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
-          Basket (3)
-        </button>
+
+        <Link to="/checkout">
+          <button className="bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
+            Basket (3)
+          </button>
+        </Link>
       </nav>
 
       <button

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "./navbar";
 import homepg1 from "../../assets/homepg1.png";
 import homepg2 from "../../assets/homepg2.png";
-
+import { Link } from "react-router-dom";
 /**
  * HomePage Component
  * Includes Hero section, Featured Produce Showcase, and "What We Believe" manifest.
@@ -18,9 +18,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen selection:bg-green selection:text-white">
       {/* HEADER / NAVIGATION */}
-      <header>
-        <Navbar />
-      </header>
+
 
       <main>
         {/* ==========================================
@@ -42,13 +40,16 @@ export default function HomePage() {
           </h1>
 
           {/* Call to Action Button */}
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="bg-green py-5 px-6 text-[14px] hover:bg-green-800 transition-all duration-300 shadow-md hover:shadow-xl text-white rounded-lg xl:px-8 xl:py-5 font-inter font-semibold xl:text-xl mx-auto cursor-pointer"
-          >
-            Browse our shop
-          </motion.button>
+
+          <Link to="/product/1" className="block w-fit mx-auto">
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="bg-green text-white rounded-lg font-inter font-semibold transition-all duration-300 shadow-md hover:shadow-xl hover:bg-green-800 cursor-pointer px-4 py-2.5 text-sm sm:px-6 sm:py-3.5 sm:text-base lg:px-8 lg:py-5 lg:text-xl"
+            >
+              Browse our shop
+            </motion.button>
+          </Link>
         </motion.section>
 
 
@@ -60,7 +61,7 @@ export default function HomePage() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
-          className="ml-[20px] flex lg:flex-row xl:gap-[60px] lg:mt-[156px] items-center lg:gap-8 flex-col mt-0"
+          className="ml-[20px] flex lg:flex-row xl:gap-[60px] lg:mt-[156px] items-center lg:gap-8 flex-col mt-8"
         >
           {/* Left Primary Image */}
           <div className="overflow-hidden transition-transform duration-500 hover:shadow-2xl">
@@ -126,6 +127,6 @@ export default function HomePage() {
           </div>
         </motion.section>
       </main>
-    </div>
+    </div >
   );
 }
