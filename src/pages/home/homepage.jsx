@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./navbar";
-import homepg1 from "../../assets/homepg1.png";
-import homepg2 from "../../assets/homepg2.png";
+import homepg1 from "../../assets/homepg1.webp";
+import homepg2 from "../../assets/homepg2.webp";
 import { Link } from "react-router-dom";
 /**
  * HomePage Component

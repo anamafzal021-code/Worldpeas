@@ -7,9 +7,9 @@ import Vegs from "./pages/home/vegs";
 import Summary from "./pages/home/summary";
 import HomePage from "./pages/home/homepage";
 
-import veg1 from "./assets/veg1.png";
-import veg2 from "./assets/veg2.png";
-import veg3 from "./assets/veg3.png";
+import veg1 from "./assets/veg1.webp";
+import veg2 from "./assets/veg2.webp";
+import veg3 from "./assets/veg3.webp";
 import ProductPage from "./pages/home/productpage";
 import { Link } from "react-router-dom";
 

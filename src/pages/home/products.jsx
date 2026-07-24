@@ -1,6 +1,6 @@
-import veg1 from "../../assets/veg1.png";
-import veg2 from "../../assets/veg2.png";
-import veg3 from "../../assets/veg3.png";
+import veg1 from "../../assets/veg1.webp";
+import veg2 from "../../assets/veg2.webp";
+import veg3 from "../../assets/veg3.webp";
 import { useState } from "react";
 
 export default function Products() {
