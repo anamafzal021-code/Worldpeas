@@ -36,10 +36,8 @@ export default function Navbar() {
           My profile
         </a>
 
-        <Link to="/checkout">
-          <button className="bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
-            Basket (3)
-          </button>
+        <Link to="/checkout" className="flex items-center justify-center bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-green-900 hover:scale-105">
+          Basket (3)
         </Link>
       </nav>
 
@@ -51,13 +49,13 @@ export default function Navbar() {
       </button>
       {isOpen && (
         <nav className="bg-white lg:hidden absolute top-full left-0 w-full flex flex-col items-center justify-center gap-6 py-8 text-text-nav font-medium font-comfortaa shadow-xl border-t border-gray-100 z-40 animate-fadeIn">
-          <a
-            href="#shop"
+          <Link
+            to="/"
             onClick={() => setIsOpen(false)}
             className="text-lg transition-all duration-100 hover:underline active:text-green-950"
           >
             Shop
-          </a>
+          </Link>
           <a
             href="#newstand"
             onClick={() => setIsOpen(false)}
@@ -79,6 +77,11 @@ export default function Navbar() {
           >
             My profile
           </a>
+          <Link to="/checkout"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center justify-center bg-green text-white rounded-sm w-[126px] h-[48px] cursor-pointer transition-all duration-300 ease-in-out active:bg-green-900 hover:scale-105">
+            Basket (3)
+          </Link>
         </nav>
       )}
     </header>
